@@ -650,6 +650,9 @@ svg{
 
 .footer-adress{
     display: inline-block;
+
+    margin-right: 70px;
+
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
@@ -694,7 +697,7 @@ svg{
 .footer-join{
     display: inline-block;
 
-    margin-left: 70px;
+    margin-right: 93px;
     padding-top: 12px;
 
 }
@@ -759,6 +762,92 @@ svg{
     fill: #ffffff;
 }
 
+.footer-subscribe{
+    display: inline-block;
+    
+    padding-top: 12px; 
+}
+
+.title-subscribe{
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,14;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.subscribe-input{
+    height: 50px;
+    width: 358px;
+
+    margin-right: 12px;
+    padding: 15px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    background-color: inherit;
+}
+
+.subscribe-input::placeholder{
+    font-size: 16px;
+    line-height: 1.25;
+
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-submit{
+    position: relative;
+    height: 50px;
+    width: 200px;
+
+    padding: 10px 29px;
+
+    cursor: pointer;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-width: 0;
+
+    background: #2196F3;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: left;
+
+    color: #FFFFFF;
+}
+
+.icon-footer-send{
+    position: absolute;
+    top: 12px;
+    right: 28px;
+
+    margin-left: 10px;
+
+    height: 24px;
+    width: 24px;
+
+    background-color: #2196F3;
+    fill: #FFFFFF;
+}
+
 
 /*модальное окно*/
 
@@ -800,6 +889,8 @@ svg{
     min-height: 581px;
     min-width: 528px;
 
+    padding: 40px;
+
     border-radius: 4px;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
@@ -824,6 +915,8 @@ svg{
     top: 8px;
     right: 8px;
 
+    cursor: pointer;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -837,12 +930,61 @@ svg{
     background: #FFFFFF;
 }
 
+.button-modal .icon-close-black{
+    transition-property: fill;
+    transition-duration: var(--transition-duration); 
+    transition-timing-function: var(--transition-timing-function);
+}
+
+.button-modal:hover .icon-close-black{
+    fill: var(--accent-color);
+}
+
 .icon-close-black{
     margin: 0;
 
     height: 18px;
     width: 18px;
     fill: #000000;
+}
+
+.modal-titel{
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    font-size: 20px;
+    line-height: 1.15;
+
+    color: #212121;
+}
+
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+
+}
+
+.form-label{
+    font-size: 12px;
+    line-height: 1.17;
+
+    letter-spacing: 0.01em;
+
+    color: #757575;
+}
+
+.form-input{
+    width: 448px;
+    height: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    background-color: inherit;
 }
 
 
